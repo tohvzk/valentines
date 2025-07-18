@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("./vinyl.svg")
+    fetch("./vinyl.png")
       .then((response) => response.text())
-      .then((svg) => {
+      .then((png) => {
         const playerContainer = document.getElementById("player-container");
-        playerContainer.innerHTML = svg;
+        playerContainer.innerHTML = png;
 
-        const vinyl = document.querySelector("svg");
+        const vinyl = document.querySelector("png");
         const playButton = document.getElementById("play-button");
         const audio = document.getElementById("love-song");
         let isPlaying = false;
@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       })
-      .catch((err) => console.error("Error loading SVG:", err));
+      .catch((err) => console.error("Error loading PNG:", err));
 });
