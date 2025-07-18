@@ -1,0 +1,68 @@
+body {
+  background: #0a1b2f;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 40px;
+}
+
+.cover {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 1s ease;
+  z-index: 2;
+  left: 10px;
+  top: 10px;
+}
+
+.vinyl {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: transform 1s ease;
+}
+
+.spin {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+button {
+  background: #3b648d;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Overpass', sans-serif;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #325577;
+}
